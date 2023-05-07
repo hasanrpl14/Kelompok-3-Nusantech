@@ -1,15 +1,11 @@
-// eslint-disable-next-line no-unused-vars
-import { useState } from "react";
 import "./index.css";
-import Login from "./components/Login";
+import Login from "./components/login/Login";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div>
-          <Login />
-        </div>
+        <Login />
       </header>
     </div>
   );

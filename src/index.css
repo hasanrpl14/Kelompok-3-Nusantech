@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .App {
-  background-image: url(./assets/imgbg1.png);
+  background-image: url(../src/asset/bgimage1.png);
   @apply bg-cover;
 }
 

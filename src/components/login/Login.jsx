@@ -1,8 +1,7 @@
-// eslint-disable-next-line no-unused-vars
 import React from "react";
-import "../index.css";
+import "../../index.css";
 
-function Login() {
+const Login = () => {
   return (
     <div className="hero h-screen w-full flex justify-center items-center">
       <div className="card-form w-[450px] h-80">
@@ -10,6 +9,6 @@ function Login() {
       </div>
     </div>
   );
-}
+};
 
 export default Login;
