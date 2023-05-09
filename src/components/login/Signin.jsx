@@ -2,7 +2,7 @@ import React from "react";
 import "../../index.css";
 import { useNavigate } from "react-router-dom";
 
-const Login = () => {
+const Signin = () => {
   const navigate = useNavigate();
 
   return (
@@ -10,13 +10,13 @@ const Login = () => {
       <div className="card-form w-[450px] h-auto">
         <form action="" className="p-10">
           <h1 className="font-semibold text-4xl flex justify-center mb-10 text-white">
-            SignUp
+            SignIn
           </h1>
 
           <div className="mb-5">
             <input
               type="text"
-              id="username"
+              id="usernamesignin"
               placeholder="username"
               className="w-full p-2.5 rounded-md"
             />
@@ -24,57 +24,27 @@ const Login = () => {
 
           <div className="mb-5">
             <input
-              type="email"
-              id="email"
-              placeholder="Emailsignup"
-              className="w-full p-2.5 rounded-md"
-            />
-          </div>
-
-          <div className="mb-5">
-            <input
-              type="number"
-              id="phonenumbersignup"
-              placeholder="phone number"
-              min={0}
-              className="w-full p-2.5 rounded-md active:appearance-none"
-            />
-          </div>
-
-          <div className="mb-5">
-            <input
               type="password"
-              id="passwordsignup"
-              placeholder="Password"
+              id="passwordsignin"
+              placeholder="password"
               className="w-full p-2.5 rounded-md"
             />
-          </div>
-
-          <div className="mb-5">
-            <textarea
-              name="text"
-              id="textarea"
-              placeholder="Address"
-              className="w-full h-20 p-2.5 rounded-md resize-none"
-              cols="auto"
-              rows="5"
-            ></textarea>
           </div>
 
           <div className="bg-sky-700 flex justify-center items-center p-3 w-28 rounded-md mb-5">
-            <button onClick={() => navigate("/home")} className="text-white">
+            <button onClick={() => navigate("/")} className="text-white">
               submit
             </button>
           </div>
 
           <div className="text-white">
             <span>
-              already have account,{" "}
+              create new account,{" "}
               <button
                 className="text-sky-400 hover:text-sky-300"
-                onClick={() => navigate("/signin")}
+                onClick={() => navigate("/")}
               >
-                Sign In
+                SignUp
               </button>
             </span>
           </div>
@@ -84,4 +54,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Signin;

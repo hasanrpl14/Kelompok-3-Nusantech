@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.App {
+.hero { 
   background-image: url(../src/asset/bgimage1.png);
   @apply bg-cover;
 }
