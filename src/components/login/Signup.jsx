@@ -2,7 +2,7 @@ import React from "react";
 import "../../index.css";
 import { useNavigate } from "react-router-dom";
 
-const Login = () => {
+const Signup = () => {
   const navigate = useNavigate();
 
   return (
@@ -16,8 +16,8 @@ const Login = () => {
           <div className="mb-5">
             <input
               type="text"
-              id="username"
-              placeholder="username"
+              id="name"
+              placeholder="Username"
               className="w-full p-2.5 rounded-md"
             />
           </div>
@@ -26,7 +26,7 @@ const Login = () => {
             <input
               type="email"
               id="email"
-              placeholder="Emailsignup"
+              placeholder="Email"
               className="w-full p-2.5 rounded-md"
             />
           </div>
@@ -34,8 +34,8 @@ const Login = () => {
           <div className="mb-5">
             <input
               type="number"
-              id="phonenumbersignup"
-              placeholder="phone number"
+              id="email"
+              placeholder="Phone number"
               min={0}
               className="w-full p-2.5 rounded-md active:appearance-none"
             />
@@ -44,7 +44,7 @@ const Login = () => {
           <div className="mb-5">
             <input
               type="password"
-              id="passwordsignup"
+              id="email"
               placeholder="Password"
               className="w-full p-2.5 rounded-md"
             />
@@ -54,27 +54,28 @@ const Login = () => {
             <textarea
               name="text"
               id="textarea"
-              placeholder="Address"
-              className="w-full h-20 p-2.5 rounded-md resize-none"
+              className="w-full h-20 resize-none p-2.5 rounded-md"
               cols="auto"
+              placeholder="Address"
               rows="5"
             ></textarea>
           </div>
 
-          <div className="bg-sky-700 flex justify-center items-center p-3 w-28 rounded-md mb-5">
-            <button onClick={() => navigate("/home")} className="text-white">
-              submit
-            </button>
-          </div>
+          <button
+            onClick={() => navigate("/")}
+            className="text-white bg-sky-700 flex justify-center items-center p-3 w-28 rounded-md mb-5"
+          >
+            submit
+          </button>
 
           <div className="text-white">
             <span>
               already have account,{" "}
               <button
                 className="text-sky-400 hover:text-sky-300"
-                onClick={() => navigate("/signin")}
+                onClick={() => navigate("/")}
               >
-                Sign In
+                SignIn
               </button>
             </span>
           </div>
@@ -84,4 +85,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Signup;

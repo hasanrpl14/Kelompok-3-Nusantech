@@ -16,8 +16,9 @@ const Signin = () => {
           <div className="mb-5">
             <input
               type="text"
-              id="usernamesignin"
-              placeholder="username"
+              id="email"
+              required
+              placeholder="Username"
               className="w-full p-2.5 rounded-md"
             />
           </div>
@@ -25,14 +26,15 @@ const Signin = () => {
           <div className="mb-5">
             <input
               type="password"
-              id="passwordsignin"
-              placeholder="password"
+              id="email"
+              required
+              placeholder="Password"
               className="w-full p-2.5 rounded-md"
             />
           </div>
 
           <div className="bg-sky-700 flex justify-center items-center p-3 w-28 rounded-md mb-5">
-            <button onClick={() => navigate("/")} className="text-white">
+            <button onClick={() => navigate("/home")} className="text-white">
               submit
             </button>
           </div>
@@ -41,8 +43,9 @@ const Signin = () => {
             <span>
               create new account,{" "}
               <button
+              type="submit"
                 className="text-sky-400 hover:text-sky-300"
-                onClick={() => navigate("/")}
+                onClick={() => navigate("/signup")}
               >
                 SignUp
               </button>
