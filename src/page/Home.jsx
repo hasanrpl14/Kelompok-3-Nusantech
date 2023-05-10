@@ -19,7 +19,7 @@ const Home = () => {
       <a href="#">Data Siswa</a>
     </li>
     <li className="w-fit p-4 rounded-xl hover:bg-gray-700">
-      <a href="#">Data Kelas</a>
+      <a href="#">Data </a>
     </li>
     <li className="w-fit p-4 rounded-xl hover:bg-gray-700">
       <a href="#">Data Absensi</a>
