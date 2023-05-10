@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #222;
+  color: #fff;
+  font-family: "Khula", sans-serif;
+}
+
