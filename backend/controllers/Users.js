@@ -169,20 +169,32 @@ exports.createUser = async (req, res) => {
 exports.editUser = async (req, res) => {};
 
 exports.deleteUser = async (req, res) => {
-  const user = await User.findOne({
-    where: {
-      uuid: req.params.id,
-    },
-  });
-  if (!user) return res.status(404).json({ msg: "User tidak ditemukan" });
   try {
+    const user = await User.findOne({
+      where: {
+        uuid: req.params.id,
+      },
+    });
+
+    if (!user) {
+      return res.status(404).json({ msg: "User tidak ditemukan" });
+    }
+
+    if (user.profile_picture) {
+      const filePath = `./public/profile-picture/${user.profile_picture}`;
+      fs.unlinkSync(filePath);
+    }
+
     await User.destroy({
       where: {
         id: user.id,
       },
     });
-    res.status(200).json({ msg: "User berhasil dihapus" });
+
+    return res.status(200).json({ msg: "User berhasil dihapus" });
   } catch (error) {
-    res.status(400).json({ msg: error.message });
+    return res
+      .status(500)
+      .json({ msg: "Gagal menghapus pengguna", error: error.message });
   }
 };
