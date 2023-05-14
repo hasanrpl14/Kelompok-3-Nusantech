@@ -1,7 +1,9 @@
+import React from "react";
 import "./index.css";
 import Signin from "./components/login/Signin";
 import Signup from "./components/login/Signup";
 import Home from "./page/Home";
+import Tampilan from "./page/Tampilan";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -13,6 +15,8 @@ function App() {
             <Route path="/" element={<Signin />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/home" element={<Home />} />
+            <Route path="/tampilan" element={<Tampilan />} />
+
           </Routes>
         </Router>
       </header>
