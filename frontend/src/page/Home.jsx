@@ -1,7 +1,9 @@
 import React from "react";
 import "../index.css";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate() 
   return (
     <div className="flex">
      
@@ -12,19 +14,23 @@ const Home = () => {
     <img src="D:/GITHUB/project nusntech/Kelompok-3-Nusantech/src/asset" alt="" className="h-12 w-12 mb-4" />
   </div>
   <ul className="flex flex-col">
-    <li className="p-4 rounded-xl hover:bg-gray-700 w-fit">
+    <li className="p-4 rounded-xl w-60 hover:bg-gray-700 ">
       <a href="#">Dashboard</a>
     </li>
-    <li className="w-fit p-4 rounded-xl hover:bg-gray-700">
-      <a href="#">Data Siswa</a>
+    <li className=" p-4 rounded-xl w-60 hover:bg-gray-700">
+      <a onClick={() => navigate('/account')}>Account</a>
     </li>
-    <li className="w-fit p-4 rounded-xl hover:bg-gray-700">
+    <li className=" p-4 rounded-xl w-60 hover:bg-gray-700">
       <a href="#">Data Kelas</a>
     </li>
-    <li className="w-fit p-4 rounded-xl hover:bg-gray-700">
-      <a href="#">Data Absensi</a>
+    <li className="p-4 rounded-xl w-60 hover:bg-gray-700">
+      <a href="#">Data  </a>
+    </li>
+    <li className="p-4 rounded-xl w-60 hover:bg-gray-700">
+      <a >Data Absensi</a>
     </li>
   </ul>
+
 </div>
       </nav>
       
