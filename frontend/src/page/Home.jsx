@@ -3,7 +3,6 @@ import "../index.css";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
-  const navigate = useNavigate();
   return (
     <div className="flex">
       {/* Sidebar */}
@@ -32,10 +31,8 @@ const Home = () => {
           </ul>
         </div>
       </nav>
-
       {/* Main Content */}
       <div className="flex-1 p-10">
-        <h1 className="text-3xl font-bold mb-4">Absensi</h1>
         <button
           className="p-10 bg-sky-400 rounded-md"
           onClick={() => navigate("/history")}
