@@ -9,13 +9,6 @@ const Home = () => {
       {/* Sidebar */}
       <nav className="w-60 bg-gray-800 h-screen">
         <div className="flex flex-col h-full w-1/6 bg-gray-800 text-white">
-          <div className="p-4">
-            <img
-              src="D:/GITHUB/project nusntech/Kelompok-3-Nusantech/src/asset"
-              alt=""
-              className="h-12 w-12 mb-4"
-            />
-          </div>
           <ul className="flex flex-col">
             <li className="p-4 rounded-xl hover:bg-gray-700 w-fit">
               <a href="#">Dashboard</a>
