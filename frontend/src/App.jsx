@@ -3,6 +3,7 @@ import Signin from "./components/login/Signin";
 import Signup from "./components/login/Signup";
 import Account from "./components/Halaman Account/Account";
 import Home from "./page/Home";
+import History from "./page/History";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
             <Route path="/signup" element={<Signup />} />
             <Route path="/home" element={<Home />} />
             <Route path="/account" element={<Account/>} />
+            <Route path="/history" element={<History />} />
           </Routes>
         </Router>
       </header>
