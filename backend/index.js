@@ -1,13 +1,13 @@
-import express from "express";
-import cors from "cors";
-import session from "express-session";
-import dotenv from "dotenv";
-import db from "./config/Database.js";
-import SequelizeStore from "connect-session-sequelize";
-import UserRoute from "./routes/UserRoute.js";
-import AuthRoute from "./routes/AuthRoute.js";
-// file upload
-import fileUpload from "express-fileupload";
+const express = require('express')
+const cors = require('cors')
+const session = require('express-session')
+const dotenv = require('dotenv')
+const db = require('./config/Database.js')
+const SequelizeStore = require('connect-session-sequelize')
+const UserRoute = require('./routes/UserRoute.js')
+const AuthRoute = require('./routes/AuthRoute.js')
+
+const fileUpload = require('express-fileupload')
 
 dotenv.config();
 

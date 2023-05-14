@@ -1,10 +1,10 @@
-import User from "../models/UserModel.js";
-import argon2 from "argon2";
-import { Op } from "sequelize";
-import path from "path";
-import fs from "fs";
+const User = require("../models/UserModel.js");
+const argon2 = require("argon2");
+const { Op } = require("sequelize");
+const path = require("path");
+const fs = require("fs");
 
-export const getUsers = async (req, res) => {
+exports.getUsers = async (req, res) => {
   const last_id = parseInt(req.query.lastId) || 0;
   const limit = parseInt(req.query.limit) || 10;
   const search = req.query.search_query || "";
@@ -62,7 +62,7 @@ export const getUsers = async (req, res) => {
   });
 };
 
-export const getUserById = async (req, res) => {
+exports.getUserById = async (req, res) => {
   try {
     const response = await User.findOne({
       attributes: [
@@ -86,7 +86,7 @@ export const getUserById = async (req, res) => {
   }
 };
 
-export const createUser = async (req, res) => {
+exports.createUser = async (req, res) => {
   const { name, email, password, confPassword, role, phoneNumber, address } =
     req.body;
   if (!name) {
@@ -166,9 +166,9 @@ export const createUser = async (req, res) => {
   }
 };
 
-export const editUser = async (req, res) => {};
+exports.editUser = async (req, res) => {};
 
-export const deleteUser = async (req, res) => {
+exports.deleteUser = async (req, res) => {
   const user = await User.findOne({
     where: {
       uuid: req.params.id,
