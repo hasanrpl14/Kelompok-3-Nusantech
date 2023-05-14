@@ -1,5 +1,4 @@
 import React from "react";
-import "./Absensi.css";
 // import { Link } from "react-router-dom";
 import Navbar from "../layouts/navbar/navbar";
 
@@ -13,14 +12,29 @@ const Absensi = () => {
   return (
     <div>
       <Navbar />
-      <div className=" container">
-        <p className="text-left text-slate-600">Selamat Pagi</p>
-        <p className="text-left text-slate-600">(Nama User)</p>
-        <p className="text-right text-slate-600">{getCurrentDate()}</p>
-        <hr />
-        <div className="content">{/* Isi dari web Anda */}</div>
-        <div className="absen-button-container">
-          <button className="absen-button">Absen masuk</button>
+      <div className=" box bg-[#E8E8E8] w-11/12 pb-[3rem] px-5 py-5 ms-[3.5rem] absolute z-20 top-[4rem] rounded-[7px]">
+        <div
+          className="greating-tgl py-2 mb-4 flex justify-between items-center"
+          style={{ borderBottom: "2px solid grey" }}
+        >
+          <span className="greating-name">
+            <h3>Selamat Sore</h3>
+            <h1 className="font-bold text-2xl">(Nama User)</h1>
+          </span>
+          <span>
+            <p>{getCurrentDate()}</p>
+          </span>
+        </div>
+        <div
+          className="content w-[20rem] h-[20rem] mx-auto rounded-[5px]"
+          style={{ border: "2px solid grey" }}
+        >
+          {/* Isi dari web Anda */}
+        </div>
+        <div className="absen-button-container flex justify-center mt-5">
+          <button className="bg-[green] text-white px-[5rem] py-3 rounded-[5px] mx-auto">
+            Absen masuk
+          </button>
         </div>
       </div>
     </div>
