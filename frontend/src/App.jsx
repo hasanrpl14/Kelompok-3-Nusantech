@@ -8,6 +8,7 @@ import Tampilan from "./page/Tampilan";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Signin from "./components/login/Signin";
 import HomeUser from "./page/homeUser";
+import Sesudah from "./components/Selfie Absen/Sesudah";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="/account" element={<Account/>} />
             <Route path="/history" element={<History />} />
             <Route path="/tampilan" element={<Tampilan />} />
+            <Route path="/sesudah" element={<Sesudah />} />
           </Routes>
         </Router>
       </header>
