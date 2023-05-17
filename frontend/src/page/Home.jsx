@@ -41,12 +41,6 @@ const Home = () => {
         >
           History
         </button>
-        <button
-          className="p-10 ml-5 bg-sky-400 rounded-md"
-          onClick={() => navigate("/account")}
-        >
-          account
-        </button>
       </div>
     </div>
   );

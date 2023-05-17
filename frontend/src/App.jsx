@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 import Signup from "./components/login/Signup";
-import Account from "./components/Halaman Account/Account";
+import Account from "./components/HalamanAccount/Account";
 import Home from "./page/Home";
 import History from "./page/History";
 import Tampilan from "./page/Tampilan";
