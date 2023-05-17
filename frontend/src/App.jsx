@@ -15,11 +15,11 @@ function App() {
       <header className="App-header">
         <Router>
           <Routes>
-            <Route path="/" element={<Signin/>} />
+            <Route path="/" element={<Signin />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/home" element={<Home />} />
             <Route path="/homeUser" element={<HomeUser />} />
-            <Route path="/account" element={<Account/>} />
+            <Route path="/account" element={<Account />} />
             <Route path="/history" element={<History />} />
             <Route path="/tampilan" element={<Tampilan />} />
           </Routes>
