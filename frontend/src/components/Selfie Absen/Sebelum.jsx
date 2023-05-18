@@ -1,16 +1,15 @@
 import React from "react";
+// import { Link } from "react-router-dom";
 import Navbar from "../layouts/navbar/navbar";
-import selfieImage from "../../../public/assets/selfie.jpg";
+import { useNavigate } from "react-router-dom";
 
-const Sesudah = () => {
+
+const Absensi = () => {
+    const navigate = useNavigate();
   const getCurrentDate = () => {
     const date = new Date();
     const options = { weekday: "long", year: "numeric", month: "long", day: "numeric" };
     return date.toLocaleDateString("en-US", options);
-  };
-
-  const alertPulang = () => {
-    alert("Anda sudah melakukan absen");
   };
 
   return (
@@ -29,19 +28,10 @@ const Sesudah = () => {
             <p>{getCurrentDate()}</p>
           </span>
         </div>
-        <div
-          className="content w-[20rem] h-[20rem] mx-auto rounded-[5px]"
-          style={{ border: "2px solid grey" }}
-        >
           {/* Isi dari web Anda */}
-          <img src={selfieImage} alt="Selfie" />
-        </div>
         <div className="absen-button-container flex justify-center mt-5">
-          <button
-            className="bg-[green] text-white px-[5rem] py-3 rounded-[5px] mx-auto"
-            onClick={alertPulang}
-          >
-            Absen Pulang
+          <button onClick={() => navigate("/tampilan")} className="bg-[green] text-white px-[5rem] py-3 rounded-[5px] mx-auto">
+            Absen masuk
           </button>
         </div>
       </div>
@@ -49,4 +39,4 @@ const Sesudah = () => {
   );
 };
 
-export default Sesudah;
+export default Absensi;
