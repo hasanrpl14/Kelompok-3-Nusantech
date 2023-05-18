@@ -20,7 +20,6 @@ function App() {
             <Route path="/account" element={<Account/>} />
             <Route path="/history" element={<History />} />
             <Route path="/tampilan" element={<Tampilan />} />
-
           </Routes>
         </Router>
       </header>
