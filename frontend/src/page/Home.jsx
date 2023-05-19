@@ -18,18 +18,33 @@ const Home = () => {
             <li className="p-4 rounded-xl w-60 hover:bg-gray-700 ">
               <a href="#">Dashboard</a>
             </li>
-            <li className=" p-4 rounded-xl w-60 hover:bg-gray-700">
-              <a onClick={() => navigate("/account")}>Account</a>
+
+            <li className=" rounded-xl h-14 w-60 hover:bg-gray-700">
+              <button
+                className="p-4 w-full h-full flex justify-start items-center"
+                onClick={() => navigate("/account")}
+              >
+                Account
+              </button>
             </li>
-            <li className=" p-4 rounded-xl w-60 hover:bg-gray-700">
-              <a onClick={() => navigate("/history")}>History</a>
+
+            <li className="rounded-xl h-14 w-60 hover:bg-gray-700">
+              <button
+                className="p-4 w-full h-full flex justify-start items-center"
+                onClick={() => navigate("/history")}
+              >
+                History
+              </button>
             </li>
+
             <li className=" p-4 rounded-xl w-60 hover:bg-gray-700">
               <a href="#">Data Kelas</a>
             </li>
+
             <li className="p-4 rounded-xl w-60 hover:bg-gray-700">
               <a href="#">Data </a>
             </li>
+
             <li className="p-4 rounded-xl w-60 hover:bg-gray-700">
               <a>Data Absensi</a>
             </li>
@@ -41,14 +56,7 @@ const Home = () => {
         </div>
       </nav>
       {/* Main Content */}
-      <div className="flex-1 p-10">
-        {/* <button
-          className="p-10 bg-sky-400 rounded-md"
-          onClick={() => navigate("/history")}
-        >
-          History
-        </button> */}
-      </div>
+      <div className="flex-1 p-10"></div>
     </div>
   );
 };

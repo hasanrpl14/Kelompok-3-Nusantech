@@ -3,9 +3,9 @@ import "../../index.css";
 
 const Content = () => {
   return (
-    <div className="text-black h-screen px-10 py-5">
+    <div className="">
       <div className="w-full h-20 rounded-lg grid grid-cols-4 p-5 gap-5 mb-5">
-        <div className="flex justify-center rounded-md items-center">
+        <div className=" rounded-md items-center">
           <input
             type="text"
             className="w-full rounded-md"
