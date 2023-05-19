@@ -15,11 +15,13 @@ const Home = () => {
           </div>
 
           <ul className="flex flex-col">
-            <li className="p-4 rounded-xl w-60 hover:bg-gray-700 ">
+            <li className="rounded-xl w-4 w-60 hover:bg-gray-700 ">
               <a href="#">Dashboard</a>
             </li>
-            <li className=" p-4 rounded-xl w-60 hover:bg-gray-700">
-              <a onClick={() => navigate("/account")}>Account</a>
+            <li className="rounded-xl w-60 hover:bg-gray-700">
+              <a className="" onClick={() => navigate("/account")}>
+                Account
+              </a>
             </li>
             <li className=" p-4 rounded-xl w-60 hover:bg-gray-700">
               <a onClick={() => navigate("/history")}>History</a>
