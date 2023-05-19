@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import "../index.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -14,12 +14,15 @@ const Home = () => {
             <h1 className="text-3xl font-bold mb-4">Absensi</h1>
           </div>
 
-          <ul className="flex flex-col">
+          {/* <ul className="flex flex-col">
             <li className="p-4 rounded-xl w-60 hover:bg-gray-700 ">
               <a href="#">Dashboard</a>
             </li>
             <li className=" p-4 rounded-xl w-60 hover:bg-gray-700">
               <a onClick={() => navigate("/account")}>Account</a>
+            </li>
+            <li className=" p-4 rounded-xl w-60 hover:bg-gray-700">
+              <a onClick={() => navigate("/history")}>History</a>
             </li>
             <li className=" p-4 rounded-xl w-60 hover:bg-gray-700">
               <a href="#">Data Kelas</a>
@@ -30,17 +33,22 @@ const Home = () => {
             <li className="p-4 rounded-xl w-60 hover:bg-gray-700">
               <a>Data Absensi</a>
             </li>
+          </ul> */}
+
+          <ul>
+            <li><Link to='/Signin'}> signin </Link></li>
           </ul>
+
         </div>
       </nav>
       {/* Main Content */}
       <div className="flex-1 p-10">
-        <button
+        {/* <button
           className="p-10 bg-sky-400 rounded-md"
           onClick={() => navigate("/history")}
         >
           History
-        </button>
+        </button> */}
       </div>
     </div>
   );
