@@ -1,15 +1,12 @@
 import React from "react";
+import "../index.css";
+import Header from "../components/history-absend/Header";
 
 const History = () => {
   return (
-    <div>
-      <h1>history</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-        voluptate facilis nostrum fugit autem quidem, aperiam laudantium eaque
-        molestiae temporibus.
-      </p>
-    </div>
+    <>
+      <Header />
+    </>
   );
 };
 
