@@ -14,7 +14,7 @@ const Home = () => {
             <h1 className="text-3xl font-bold mb-4">Absensi</h1>
           </div>
 
-          {/* <ul className="flex flex-col">
+          <ul className="flex flex-col">
             <li className="p-4 rounded-xl w-60 hover:bg-gray-700 ">
               <a href="#">Dashboard</a>
             </li>
@@ -33,12 +33,11 @@ const Home = () => {
             <li className="p-4 rounded-xl w-60 hover:bg-gray-700">
               <a>Data Absensi</a>
             </li>
-          </ul> */}
-
-          <ul>
-            <li><Link to='/Signin'}> signin </Link></li>
           </ul>
 
+          <ul>
+            <li> {/* <Link to="/Signin"> signin </Link> */}</li>
+          </ul>
         </div>
       </nav>
       {/* Main Content */}
