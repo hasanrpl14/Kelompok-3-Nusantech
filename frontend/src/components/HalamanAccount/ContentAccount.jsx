@@ -1,8 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const OptionBox = () => {
+const Account = () => {
   const navigate = useNavigate();
+  
   return (
     <div className="content">
       <div className="box bg-[#E8E8E8] w-11/12 pb-[3rem] px-5 py-5 ms-[3.5rem] absolute z-20 top-[4rem] rounded-[7px]  ">
@@ -95,4 +96,4 @@ const OptionBox = () => {
     </div>
   );
 };
-export default OptionBox;
+export default Account;
