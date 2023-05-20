@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 import Signup from "./components/login/Signup";
-import Account from "./components/HalamanAccount/Account";
+import Account from "./components/HalamanAccount/ContentAccount";
 import History from "./page/History";
 import Tampilan from "./page/Tampilan";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
