@@ -1,21 +1,21 @@
 import React from "react";
 import "./index.css";
 import Signup from "./components/login/Signup";
-import Account from "./components/HalamanAccount/Account";
-import Home from "./page/Home";
+import Account from "./components/HalamanAccount/ContentAccount";
 import History from "./page/History";
 import Tampilan from "./page/Tampilan";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Signin from "./components/login/Signin";
 import HomeUser from "./page/homeUser";
+import Sebelum from "./components/Selfie Absen/Sebelum";
+import Sesudah from "./components/Selfie Absen/Sesudah";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <Router>
-          <Home />
-          <Switch>
+          <Routes>
             <Route path="/" exact element={<Signin />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/home" element={<Home />} />
@@ -23,7 +23,9 @@ function App() {
             <Route path="/account" element={<Account />} />
             <Route path="/history" element={<History />} />
             <Route path="/tampilan" element={<Tampilan />} />
-          </Switch>
+            <Route path="/sebelum" element={<Sebelum />} />
+            <Route path="/sesudah" element={<Sesudah />} />
+          </Routes>
         </Router>
       </header>
     </div>
