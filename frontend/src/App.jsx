@@ -1,8 +1,7 @@
 import React from "react";
 import "./index.css";
 import Signup from "./components/login/Signup";
-import Account from "./components/Halaman Account/Account";
-import Home from "./page/Home";
+import Account from "./components/HalamanAccount/Account";
 import History from "./page/History";
 import Tampilan from "./page/Tampilan";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -17,11 +16,11 @@ function App() {
       <header className="App-header">
         <Router>
           <Routes>
-            <Route path="/" element={<Signin/>} />
+            <Route path="/" exact element={<Signin />} />
             <Route path="/signup" element={<Signup />} />
-            <Route path="/home" element={<Home />} />
+            {/* <Route path="/home" exact element={<Home />} /> */}
             <Route path="/homeUser" element={<HomeUser />} />
-            <Route path="/account" element={<Account/>} />
+            <Route path="/account" element={<Account />} />
             <Route path="/history" element={<History />} />
             <Route path="/tampilan" element={<Tampilan />} />
             <Route path="/sebelum" element={<Sebelum />} />
