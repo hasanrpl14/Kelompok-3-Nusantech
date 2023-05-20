@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import React from "react";
 import "../index.css";
 import { useNavigate, Link } from "react-router-dom";

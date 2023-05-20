@@ -18,7 +18,7 @@ function App() {
           <Switch>
             <Route path="/" exact element={<Signin />} />
             <Route path="/signup" element={<Signup />} />
-            {/* <Route path="/home" exact element={<Home />} /> */}
+            <Route path="/home" element={<Home />} />
             <Route path="/homeUser" element={<HomeUser />} />
             <Route path="/account" element={<Account />} />
             <Route path="/history" element={<History />} />
