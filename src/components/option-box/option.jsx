@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-// tambah comment
+
 const OptionBox = () => {
   const navigate = useNavigate();
   
