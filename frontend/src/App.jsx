@@ -1,27 +1,29 @@
 import React from "react";
 import "./index.css";
-import Signin from "./components/login/Signin";
 import Signup from "./components/login/Signup";
-import Account from "./components/Halaman Account/Account";
+import Account from "./components/HalamanAccount/Account";
 import Home from "./page/Home";
 import History from "./page/History";
 import Tampilan from "./page/Tampilan";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Signin from "./components/login/Signin";
+import HomeUser from "./page/homeUser";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <Router>
-          <Routes>
-            <Route path="/" element={<Signin />} />
+          <Home />
+          <Switch>
+            <Route path="/" exact element={<Signin />} />
             <Route path="/signup" element={<Signup />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/account" element={<Account/>} />
+            {/* <Route path="/home" exact element={<Home />} /> */}
+            <Route path="/homeUser" element={<HomeUser />} />
+            <Route path="/account" element={<Account />} />
             <Route path="/history" element={<History />} />
             <Route path="/tampilan" element={<Tampilan />} />
-
-          </Routes>
+          </Switch>
         </Router>
       </header>
     </div>
