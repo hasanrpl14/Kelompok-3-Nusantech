@@ -103,7 +103,7 @@ const Navbar = () => {
                 className="block py-2 pl-3 pr-4 text-white font-bold bg-blue-700 rounded md:bg-transparent md:p-0"
                 aria-current="page"
               >
-                Absensi
+                Profile
               </a>
             </li>
           </ul>
