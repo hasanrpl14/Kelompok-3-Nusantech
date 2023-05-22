@@ -6,7 +6,7 @@ exports.verifyUser = async (req, res, next) =>{
     if(!req.session.userId){
         return res.status(401).json({msg: "Mohon login ke akun Anda!"});
     }
-    // ambil user berdasarkan uuid
+    // ambil user berdasarkan uuid 
     const user = await User.findOne({
         where: {
             uuid: req.session.userId
