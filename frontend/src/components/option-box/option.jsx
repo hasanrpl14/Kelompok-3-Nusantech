@@ -1,4 +1,8 @@
+import React from "react";
+import { useNavigate } from "react-router-dom";
+
 const OptionBox = () => {
+  const navigate = useNavigate();
   return (
     <div className="content">
       <div className="box bg-[#E8E8E8] w-11/12 pb-[3rem] px-5 py-5 ms-[3.5rem] absolute z-20 top-[4rem] rounded-[7px]  ">
@@ -22,13 +26,13 @@ const OptionBox = () => {
             <p className="p-absen">Absen</p>
           </div>
           <div className="justify-center flex flex-col items-center">
-            <button className="bg-[#3DB73A] py-[40px] px-[40px]  rounded-lg">
+            <button onClick={() => navigate("/history")}className="bg-[#3DB73A] py-[40px] px-[40px]  rounded-lg">
               <img className="w-[2rem]" src="./assets/history.png" alt="" />
             </button>
             <p className="p-absen">History</p>
           </div>
           <div className="justify-center flex flex-col items-center">
-            <button className="bg-[#a3307f] py-[40px] px-[40px]  rounded-lg">
+            <button onClick={() => navigate("/account")} className="bg-[#a3307f] py-[40px] px-[40px]  rounded-lg">     
               <img src="./assets/logo.png" alt="" />
             </button>
             <p className="p-absen">Profile</p>

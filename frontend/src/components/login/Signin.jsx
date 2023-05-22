@@ -33,17 +33,18 @@ const Signin = () => {
             />
           </div>
 
-          <div className="bg-sky-700 flex justify-center items-center p-3 w-28 rounded-md mb-5">
-            <button onClick={() => navigate("/home")} className="text-white">
-              submit
-            </button>
-          </div>
+          <button
+            onClick={() => navigate("/homeUser")}
+            className="text-white py-2.5 px-10 rounded-md bg-sky-700 hover:bg-sky-500 hover:ring-2 hover:ring-bg-sky-200 hover:text-slate-800 hover:font-bold"
+          >
+            submit
+          </button>
 
           <div className="text-white">
             <span>
               create new account,{" "}
               <button
-              type="submit"
+                type="submit"
                 className="text-sky-400 hover:text-sky-300"
                 onClick={() => navigate("/signup")}
               >

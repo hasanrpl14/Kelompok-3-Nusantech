@@ -63,7 +63,7 @@ const Signup = () => {
 
           <button
             onClick={() => navigate("/")}
-            className="text-white bg-sky-700 flex justify-center items-center p-3 w-28 rounded-md mb-5"
+            className="text-white py-2.5 px-10 rounded-md bg-sky-700 hover:bg-sky-500 hover:ring-2 hover:ring-bg-sky-200 hover:text-slate-800 hover:font-bold"
           >
             submit
           </button>

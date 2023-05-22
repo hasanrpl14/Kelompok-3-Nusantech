@@ -1,4 +1,9 @@
 
+import React from "react";
+import "../index.css";
+// import Header from "../components/history-absend/Header";
+import Content from "../components/history-absend/Content";
+
 const History = () => {
   //   const navigate = useNavigate();
   return (
@@ -17,6 +22,8 @@ const History = () => {
               </ul><font></font>
             </div><font></font>
           </div><font></font>
+      {/* <Header /> */}
+      {/* <Content /> */}
 
           <div className="navbar-center"><font></font>
             <a className="btn btn-ghost normal-case text-xl">ABSENSI</a><font></font>
