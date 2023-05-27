@@ -7,7 +7,6 @@ import Tampilan from "./page/Tampilan";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Signin from "./components/login/Signin";
 import HomeUser from "./page/homeUser";
-import Sebelum from "./components/Selfie Absen/Sebelum";
 import Sesudah from "./components/Selfie Absen/Sesudah";
 
 function App() {
@@ -23,7 +22,6 @@ function App() {
             <Route path="/account" element={<Account />} />
             <Route path="/history" element={<History />} />
             <Route path="/tampilan" element={<Tampilan />} />
-            <Route path="/sebelum" element={<Sebelum />} />
             <Route path="/sesudah" element={<Sesudah />} />
           </Routes>
         </Router>
