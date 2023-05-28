@@ -139,7 +139,7 @@ const History = () => {
               />
               <h1 className="ml-1">entries</h1>
               <input
-                className="ml-auto mr-10"
+                className="ml-auto mr-10 p-1 rounded-2xl text-white px-2"
                 type="search"
                 placeholder="  cari...."
               />
