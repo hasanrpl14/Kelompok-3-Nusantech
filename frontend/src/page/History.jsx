@@ -98,7 +98,7 @@ const History = () => {
 
         {/*  Area tanggal*/}
         <div className=" text-gray-500 justify-center flex">
-          <div className="w-11/12 bg-slate-200 text-white flex items-center justify-between h-16 mt-5 rounded-2xl drop-shadow-lg grid grid-cols-3 grid-rows-1 gap-5 px-5">
+          <div className="w-11/12 bg-slate-200 flex items-center justify-between h-16 mt-5 rounded-2xl drop-shadow-lg grid grid-cols-3 grid-rows-1 gap-5 px-5">
             <input
               type="text"
               className="w-50 bg-transparent text-black"
@@ -112,9 +112,6 @@ const History = () => {
               </button>
               <button className="bg-orange-400 w-28 h-8 mx-2 rounded-lg">
                 Cetak
-              </button>
-              <button className="bg-green-500  w-28 h-8 mx-2  rounded-lg">
-                Clear
               </button>
             </div>
           </div>
@@ -139,7 +136,7 @@ const History = () => {
               />
               <h1 className="ml-1">entries</h1>
               <input
-                className="ml-auto mr-10 p-1 rounded-2xl text-white px-2"
+                className="ml-auto mr-10 p-1 rounded-2xl text-black px-2"
                 type="search"
                 placeholder="  cari...."
               />
@@ -150,34 +147,30 @@ const History = () => {
               <span className="w-2/12 font-semibold">No</span>
               <span className="w-5/6 font-semibold">Tanggal</span>
               <span className="w-11/12 font-semibold">Absen Masuk</span>
-              <span className="w-11/12 font-semibold">Absen Pulang</span>
+              <span className="w-11/12  font-semibold">Absen Pulang</span>
               <span className="w-5/6 font-semibold">Status</span>
-              <span className="w-5/6 font-semibold">Aksi</span>
             </div>
             <hr className=" h-0.5 border-t-0 bg-gray-300 my-3" />
             <div className="flex items-center mb-2 ml-6 text-sm">
               <span className="w-2/12">1</span>
-              <span className="w-2/3">13 Mei 2023</span>
-              <span className="w-1/4 text-center text-white bg-green-500  rounded-full">
+              <span className="w-6/12">13 Mei 2023</span>
+              <span className="w-3/12 ml-[5rem] text-center text-white bg-green-500  rounded-full">
                 15:40:56
               </span>
-              <span className="w-2/12 text-center text-white bg-blue-500  rounded-full ml-2">
+              <span className="w-3/12 mr-[3rem] text-center text-white bg-blue-500  rounded-full ml-2">
                 Telat
               </span>
-              <span className="w-1/4 ml-32 text-center text-white bg-green-500  rounded-full">
+              <span className="w-3/12 ml-[4rem] text-center text-white bg-green-500  rounded-full">
                 00:00:00
               </span>
-              <span className="w-2/6 text-center text-white bg-blue-500  rounded-full ml-2">
+              <span className="w-4/12 text-center text-white bg-blue-500  rounded-full ml-2 mr-6">
                 Pulang Cepat
               </span>
-              <span className="w-5/6 ml-24">Status</span>
-              {/* <span className="text-center text-white bg-green-500  rounded-full">00:00:00</span> */}
-              <span className="mr-48 bg-green-500 w-28 rounded-l text-center text-white">
-                /
-              </span>
+              <span className="w-5/6 ml-[8rem]">Hadir</span>
+              
             </div>
 
-            <div className="mt-14 ml-6 flex items-center">
+            {/* <div className="mt-14 ml-6 flex items-center">
               <h1>Showing 1 to 1 of entries</h1>
               <div className="ml-auto mr-10 ">
                 <span className="mx-1 rounded-lg drop-shadow-lg bg-white text-sm font-semibold w-2/12 p-1">
@@ -190,8 +183,8 @@ const History = () => {
                   Next
                 </span>
               </div>
-            </div>
-            <hr className=" h-0.5 border-t-0 bg-gray-300 my-5" />
+            </div> */}
+            {/* <hr className=" h-0.5 border-t-0 bg-gray-300 my-5" />
 
             <div className="flex items-center mb-2 ml-6 text-sm">
               <span className="ml-20 mr-1">Hadir :</span>
@@ -210,8 +203,8 @@ const History = () => {
               <span className="mr-48 bg-purple-500 w-8 rounded-l text-center text-white">
                 0
               </span>
-            </div>
-          </div>
+            </div> */}
+          </div> 
         </div>
         <div className="justify-center flex">
           <div className="flex items-center mb-2 text-sm bg-orange-400 w-11/12 h-10 mt-5 rounded-lg">
