@@ -1,8 +1,11 @@
 import React from "react";
 // import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Navbar from "../layouts/navbar/navbar";
 
+
 const Absensi = () => {
+  const navigate = useNavigate();
   const getCurrentDate = () => {
     const date = new Date();
     const options = { weekday: "long", year: "numeric", month: "long", day: "numeric" };
@@ -17,7 +20,7 @@ const Absensi = () => {
           className="greating-tgl py-2 mb-4 flex justify-between items-center"
           style={{ borderBottom: "2px solid grey" }}
         >
-          <span className="greating-name">
+          <span className="greating-name">   
             <h3>Selamat Sore</h3>
             <h1 className="font-bold text-2xl">(Nama User)</h1>
           </span>
@@ -32,7 +35,7 @@ const Absensi = () => {
           {/* Isi dari web Anda */}
         </div>
         <div className="absen-button-container flex justify-center mt-5">
-          <button className="bg-[green] text-white px-[5rem] py-3 rounded-[5px] mx-auto">
+          <button onClick={() => navigate("/sesudah")} className="bg-[green] text-white px-[5rem] py-3 rounded-[5px] mx-auto">
             Absen masuk
           </button>
         </div>
