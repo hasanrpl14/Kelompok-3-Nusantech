@@ -8,6 +8,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Signin from "./components/login/Signin";
 import HomeUser from "./page/homeUser";
 import Sesudah from "./components/Selfie Absen/Sesudah";
+import Dashboard from "./components/Admin/Dashboard";
+import DataKaryawan from "./components/Admin/DataKaryawan";
+import Datauser from "./components/Admin/Datauser";
+import Datajabatan from "./components/Admin/Datajabatan";
+import Dataabsen from "./components/Admin/Dataabsen";
+import Dataaketerangan from "./components/Admin/Dataketerangan";
 
 function App() {
   return (
@@ -23,6 +29,12 @@ function App() {
             <Route path="/history" element={<History />} />
             <Route path="/tampilan" element={<Tampilan />} />
             <Route path="/sesudah" element={<Sesudah />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/admindatakaryawan" element={<DataKaryawan />} />
+            <Route path="/admindatauser" element={<Datauser />} />
+            <Route path="/admindatajabatan" element={<Datajabatan />} />
+            <Route path="/admindataabsen" element={<Dataabsen />} />
+            <Route path="/admindataketerangan" element={<Dataaketerangan />} />
           </Routes>
         </Router>
       </header>
