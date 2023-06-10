@@ -184,7 +184,7 @@ exports.editUser = async (req, res) => {
     const { name, email, password, confPassword, role, phoneNumber, address } =
       req.body;
 
-    // Cek apakah nama yang akan di daftarkan sudah ada di database dan bukan nama pengguna saat ini
+    // Cek apakah nama sudah ada di database dan bukan nama pengguna saat ini
     const existingUser = await User.findOne({
       where: {
         name,
