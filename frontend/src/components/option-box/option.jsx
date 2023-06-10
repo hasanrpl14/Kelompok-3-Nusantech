@@ -20,6 +20,7 @@ const OptionBox = () => {
         </div>
         <div className="option flex justify-evenly mt-[3rem]">
           <div className="justify-center flex flex-col items-center">
+            <button onClick={() => navigate("/sebelum")} className="bg-[#3A7BB7] py-[40px] px-[40px]  rounded-lg">
             <button onClick={() => navigate("/tampilan")}className="bg-[#3A7BB7] py-[40px] px-[40px]  rounded-lg">
               <img className="w-[3rem]" src="./assets/camera.png" alt="" />
             </button>
